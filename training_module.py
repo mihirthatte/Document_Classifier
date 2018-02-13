@@ -16,7 +16,7 @@ def readFiles(path):
 	os.chdir(path)
 	file_content = []
 	file_name_list = os.listdir(path)
-	print "no of iles - ",len(file_name_list)
+	print "no of files - ",len(file_name_list)
 	for filename in file_name_list:
 		f = open(filename, 'r')
 		linetext=f.readlines()
@@ -66,6 +66,6 @@ def train():
 		word_prob = dict((key,math.log(float(value)/len(words),2))for key,value in word_prob.items())
 		likelihood[each_topic] = word_prob
 		print "learning %s got completed in"%(each_topic.upper()),(time.time()-s1),"secs"
-		print "*********"*20
+		print "*********"*10
 	print "learning all topics completed in ",(time.time()-s),"secs"
 	return likelihood
