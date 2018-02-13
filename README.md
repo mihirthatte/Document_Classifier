@@ -9,7 +9,7 @@ There are two directories - train and test with containing document files.
 
 In test directory, files can belong to any topic. Our program based on the model it got trained on, predicts the mostly likely topic a file can belong to.
 
-##To run the program - 
+## To run the program - 
 ```
 python doc_classification.py
 ```
