@@ -13,4 +13,6 @@ In test directory, files can belong to any topic. Our program based on the model
 ```
 python doc_classification.py
 ```
+*** Make sure you're using python 2.7
+
  The program runs by first training/creating the model for each file in train dataset. Once it has trained itself on the files, the program starts predicting topic for each file in test dataset.
